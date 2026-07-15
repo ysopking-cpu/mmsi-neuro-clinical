@@ -1,0 +1,21 @@
+{
+  "title": "MMSI Neuro v3.6 - Native Android Validation Framework",
+  "description": "Native Android implementation (Kotlin, Jetpack Compose) for real-time cognitive trajectory calculation W(t) and automated clinical multi-subject PDF report generation. Designed as the empirical validation layer for the Metaphysical System Theory.",
+  "creators": [
+    {
+      "name": "Buckreus, Patrick Frank",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "EEG",
+    "Cognitive Load",
+    "Clinical Assessment",
+    "MMSI Neuro",
+    "Android Native",
+    "OpenNeuro"
+  ],
+  "version": "v3.6.4-clinical"
+}

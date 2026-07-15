@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Buckreus"
+    given-names: "Patrick Frank"
+title: "MMSI Neuro v3.6 - Native Android Validation Framework"
+version: "3.6.4-clinical"
+doi: "10.5281/zenodo.21369991"
+date-released: 2026-07-15
+keywords:
+  - EEG
+  - Cognitive Load
+  - Jetpack Compose
+  - Android Native
+  - Neuro-Signal-Processing
+  - Clinical Assessment

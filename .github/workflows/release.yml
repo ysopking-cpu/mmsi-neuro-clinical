@@ -1,0 +1,40 @@
+name: Build & Deploy MMSI Clinical Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'zulu'
+
+      - name: Build Release APK
+        run: ./gradlew assembleRelease
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: "MMSI Neuro v3.6 - Native Android Validation Framework (${{ github.ref_name }})"
+          body: |
+            ### 🧬 MMSI Neuro Clinical Assessment Suite — Release v3.6.4-clinical
+            - Synchronisiert mit Core Engine v3.6.4.
+            - Datenvalidierung über OpenNeuro ds002721 (N=10).
+            - DOI-Referenz: [10.5281/zenodo.21369991](https://doi.org/10.5281/zenodo.21369991)
+          files: |
+            app/build/outputs/apk/release/app-release-unsigned.apk
+            MMS_Clinical_Batch_Report.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}

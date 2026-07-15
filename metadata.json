@@ -1,0 +1,6 @@
+{
+  "name": "MMSI Neuro v3.6",
+  "description": "Native Android Validation Framework for real-time cognitive trajectory calculation and clinical assessment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
