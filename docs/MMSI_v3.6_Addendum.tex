@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{MMSI v3.6 Addendum: Native Android Validation Framework}
+\author{Patrick Frank Buckreus}
+\date{2026-07-14}
+
+\begin{document}
+
+\maketitle
+
+\section{Summary}
+This addendum documents the migration of the MMSI Neuro system from a Python prototype to a native Android application using Kotlin, Jetpack Compose, and Room Database.
+
+\section{System Architecture}
+The Android version provides a clinical-grade environment for EEG data ingestion and real-time monitoring.
+\begin{itemize}
+    \item \textbf{Framework:} Android (Kotlin/Compose)
+    \item \textbf{Persistence:} Room Database
+    \item \textbf{CI/CD:} GitHub Actions (Gradle-based)
+\end{itemize}
+
+\section{Core Validation}
+The cognitive system load $W(t)$ is calculated as follows:
+\begin{equation}
+    W(t) = f(\text{EEG\_Data})
+\end{equation}
+The implementation is validated via JUnit5/Mockk unit tests.
+
+\section{Metadata}
+\begin{tabular}{|l|l|}
+    \hline
+    \textbf{Author} & Patrick Frank Buckreus \\
+    \hline
+    \textbf{GitHub} & [GitHub URL] \\
+    \hline
+    \textbf{Zenodo DOI} & [Zenodo DOI] \\
+    \hline
+    \textbf{CI/CD Status} & Passing \\
+    \hline
+\end{tabular}
+
+\end{document}

@@ -1,0 +1,6 @@
+{
+  "name": "MMSI Neuro",
+  "description": "EEG data ingestion, real-time streaming, and analysis tool.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
